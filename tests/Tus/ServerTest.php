@@ -341,7 +341,7 @@ class ServerTest extends TestCase
         $headers  = $response->headers->all();
 
         $this->assertArrayNotHasKey('tus-max-size', $headers);
-        $this->assertNull(current($headers['access-control-allow-origin']));
+        $this->assertFalse(current($headers['access-control-allow-origin']));
         $this->assertEquals(implode(',', self::ALLOWED_HTTP_VERBS), current($headers['allow']));
         $this->assertEquals(implode(',', self::ALLOWED_HTTP_VERBS), current($headers['access-control-allow-methods']));
         $this->assertEquals(86400, current($headers['access-control-max-age']));
