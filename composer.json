@@ -1,12 +1,12 @@
 {
-  "name": "ankitpokhrel/tus-php",
+  "name": "finn1990/tus-php",
   "description": "A pure PHP server and client for the tus resumable upload protocol v1.0.0",
   "type": "library",
   "license": "MIT",
   "authors": [
     {
-      "name": "Ankit Pokhrel",
-      "email": "hello@ankit.pl"
+      "name": "fall1600",
+      "email": "fall1600@gmail.com"
     }
   ],
   "require": {
